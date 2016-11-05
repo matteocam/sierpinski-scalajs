@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sierpinski</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body style="margin: 0px">
+
+<div id="inputDiv" style="margin:10px; padding: 2px">
+
+<input type="number" id="numIterations" min="0" max="8" value="5"/>
+
+<button id="genTriangleBtn" type="button"
+    onclick="sierpinski.Sierpinski().genTriangleBtnClicked()">Sierpinski!</button>
+
+<input type="checkbox" id="allValues" value="on">Show the whole process!<br>
+
+</div>
+
+<div id="canvasDiv">
+<canvas id="canvas" width="2200" height="2200"></canvas>
+</div>
+
+<script type="text/javascript" src="./target/scala-2.10/sierpinski-fastopt.js"></script>
+
+<script>
+    sierpinski.Sierpinski().main();
+</script>
+</html>
+</body>
